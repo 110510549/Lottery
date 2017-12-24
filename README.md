@@ -1,2 +1,3 @@
-#抽籤程式:
-#js,electron套件
+# Lottery
+with js & electron program
+
