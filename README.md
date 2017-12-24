@@ -1,2 +1,2 @@
-# test
-this is a test sample
+#抽籤程式
+js,electron套件
