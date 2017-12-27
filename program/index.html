@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh-TW" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>線上抽籤 (Lottery)</title>
+<meta property="fb:admins" content="100000323670771" />
+<meta property="fb:app_id" content="1428705617362856" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="線上抽籤" />
+<meta property="og:url" content="http://blog.brownsugar.tw/online-draw/"/>
+<meta property="og:description" content="一個提供網友線上抽籤的網站，操作方式簡易，功能齊全，歡迎各位多加利用！" />
+<meta name="description" content="一個提供網友線上抽籤的網站，操作方式簡易，功能齊全，歡迎各位多加利用！" />
+<meta property="og:image" content="http://blog.brownsugar.tw/online-draw/thumb.png" />
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="main">
+	<div class="ad">
+		<script type="text/javascript" src="//bw.scupio.com/adpinline/ADmediaJS/brownsugar_2090_8435_9101_1.js"></script>
+	</div>
+	<div class="content">
+		<form name="fm" onsubmit="return doAllot(document.fm)" autocomplete="off">
+			<div class="setNum">
+				設定抽出數量： <input type="text" name="count" id="num" maxlength="4" value="3" placeholder="9999">
+			</div>
+			<h2>設定籤筒內容（每個籤一行）</h2>
+			<textarea name="lst" rows="10" placeholder="請在此輸入籤筒內容，一行代表一個籤。"></textarea>
+			<div class="buttons">
+				<input type="submit" class="button start" value="開始抽籤！">
+				<input type="reset" class="button reset" value="重設">
+			</div>
+			<h2>抽籤結果</h2>
+			<textarea name="result" id="result" rows="10" placeholder="抽籤的結果將顯示於此..." readonly="readonly"></textarea>
+			<div class="buttons">
+				<input type="button" class="button stAll" onclick="stAll()" value="全選結果">
+				<input type="button" id="cpAll" class="button cpAll" data-clipboard-target="#result" value="複製">
+			</div>
+		</form>
+	</div>
+	<div class="comment">
+		<fb:comments href="http://blog.brownsugar.tw/online-draw/" width="750" num_posts="10"></fb:comments>
+	</div>
+</div>
+<script type="text/javascript" src="lot.js"></script>
+</body>
+</html>
