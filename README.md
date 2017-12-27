@@ -1,3 +1,3 @@
 # Lottery
-with js & electron program
+with js & html -> electron
 
